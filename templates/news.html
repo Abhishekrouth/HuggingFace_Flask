@@ -22,25 +22,25 @@
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <form action="/summarize" method="post">
+<body> <center><h2>Welcome to News Summarizer</h2></center>
+    <div class="container"> 
+        <form action="/summarize" method="post"><h3>Summarize the news</h3>
             <textarea name="text" rows="10" cols="50" placeholder="Enter news text here...">{{text}}</textarea><br>
             <div class="button">
                 <button type="submit">Summarize News</button>
             </div>
         </form>
         <br><br>
-        <form action="/Translate" method="post">
+        <form action="/translate" method="post"> <h3>Translate the news</h3>
             <textarea name="text" rows="10" cols="50" placeholder="Enter text to translate..."></textarea><br>
             <div class="button">
                 <button type="submit">Translate News</button>
         <br><br>
         <br><br>
-        <form action="/ner" method="post">
+        <form action="/ner" method="post"><h3>Named Entity Recognition</h3>
             <textarea name="text" rows="10" cols="50" placeholder="Named Entity Recognition"></textarea><br>
             <div class="button">
-                <button type="submit">Translate News</button>
+                <button type="submit">NER</button>
             </div>
         </form>
     </div>

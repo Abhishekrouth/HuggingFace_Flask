@@ -16,7 +16,7 @@ def summarize():
     summary = s[0]['summary_text']
     return render_template("summarize.html", summary=summary)
 
-@app.route("/Translate", methods=["POST"])
+@app.route("/translate", methods=["POST"])
 def translate():
     model_name = "facebook/mbart-large-50-many-to-many-mmt"
     tokenizer = MBart50TokenizerFast.from_pretrained(model_name)
