@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Summarizer</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px;
+            border: 1px solid #5107e5;
+            border-radius: 10px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+        }
+        .button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/summarize" method="post">
+            <textarea name="text" rows="10" cols="50" placeholder="Enter news text here...">{{text}}</textarea><br>
+            <div class="button">
+                <button type="submit">Summarize News</button>
+            </div>
+        </form>
+        <br><br>
+        <form action="/Translate" method="post">
+            <textarea name="text" rows="10" cols="50" placeholder="Enter text to translate..."></textarea><br>
+            <div class="button">
+                <button type="submit">Translate News</button>
+        <br><br>
+        <br><br>
+        <form action="/ner" method="post">
+            <textarea name="text" rows="10" cols="50" placeholder="Named Entity Recognition"></textarea><br>
+            <div class="button">
+                <button type="submit">Translate News</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
